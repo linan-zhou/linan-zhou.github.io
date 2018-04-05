@@ -15,7 +15,7 @@ theme_settings:
 
   # Header and footer text
   header_text: > #two or three lines to describe your site
-     <p> 与大家分享在 <code>Python</code> <br> 学习中的经验与总结 </p>
+     <p>  <code>linan-zhou's blog for Python Learning</code> <br> 与大家分享在Python学习中的经验与总结 </p>
   header_text_feature_image: assets/img/pexels/triangular.jpeg
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
