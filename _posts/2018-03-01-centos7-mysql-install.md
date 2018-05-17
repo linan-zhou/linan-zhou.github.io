@@ -37,6 +37,7 @@ excerpt_separator: <!--more-->
     mysql-connector-java.noarch                                                                    1:5.1.25-3.el7                                                                    base
     mysql-connector-odbc.x86_64
                                                                5.2.5-7.el7                                                                       base
+
 可以看出，可以装的MySQL相关的软件里真的没有MySQL-server，这是怎么回事呢？经过查询，CentOS7中，把MySQL相关的包都从yum包管理器中移除了，换成了Mariadb
 Mariadb是一个可以用来代替MySQL的开源社区版本，维基百科的词条描述：
 
@@ -48,11 +49,11 @@ Mariadb是一个可以用来代替MySQL的开源社区版本，维基百科的�
 
     sudo yum install mariadb-server
 
-    这下就安装完成了，接下来先启动server：
+这下就安装完成了，接下来先启动server：
 
     systemctl start mariadb
 
-    再启动client：
+再启动client：
 
     [username@host ~]$ mysql -u root
     Welcome to the MariaDB monitor.  Commands end with ; or \g.
@@ -65,4 +66,4 @@ Mariadb是一个可以用来代替MySQL的开源社区版本，维基百科的�
 
     MariaDB [(none)]>
 
-    就可以在客户端使用MySqL啦
+就可以在客户端使用MySqL啦
